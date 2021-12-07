@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/honey.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container{
+    width: 70%;
+    min-height: auto;
+    max-width: 1100px;
+    margin: auto;
+    background-color: rgb(231, 183, 50);
+    border-radius: 15px;
+    margin-top: 10px;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+.slika{
+    top: 10;
+    left: 10;
+	right:10;
+    width: 100%;
+	align-items:center;
+    background: url('../img/bee\ \(2\).jpg') no-repeat center center/cover;
+    height: 505px;
+    border-radius: 15px, 15px, 15px, 15px;
+}
+
+.naslov{
+    text-align: center;
+    padding: 80px;
+    color:black;
+}
+
+.naslov h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.navigacija ul{
+    display: flex;
+    list-style: none;
+    padding: 15px 0;
+    justify-content: space-around;
+    background: linear-gradient(rgb(231, 183, 50),black);
+}
+.navigacija a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.navigacija a:hover{
+    color: rgb(241, 166, 81)
+}
+
+/* O projektu */
+#oprojektu{
+    margin: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projekt_text{
+    width: 55%;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.projekt_text h1{
+    padding-bottom: 15px;
+}
+
+.projekt_slika{
+    width: 40%;
+}
+
+/* O nama */
+#onama{
+    padding: 20px 20px 10px 20px;
+    background: rgb(236, 225, 122);
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.pcelab{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    align-items: center;
+    text-align: justify;
+}
+
+.pcelab img, .pcelam img{
+    width: 20%;
+}
+
+.pcelab p, .pcelam p{
+    width: 50%;
+}
+
+.pcelam{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+    text-align: justify;
+    flex-direction: row-reverse;
+    width: 40%;
+}
+
+/* Motivacija */
+#motivacija{
+    margin:40px 40px 40px 40px;
+    font-size: 17px;
+    text-align: justify;
+    
+}
+
+#motivacija h1{
+    margin-bottom: 15px;
+}
+
+/* Tehnologije */
+#tehnologije{
+    margin:20px;
+    font-size: 17px;
+}
+
+#tehnologije h3{
+    margin: 10px 0 10px 20px;
+}
+
+#tehnologije li{
+    margin-left: 40px;
+    list-style: square;
+}
+
+/* Footer */
+footer{
+    height: 170px;
+    background: linear-gradient(rgb(150, 0, 0),black);
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+.kraj{
+    padding: 20px;
+}
+
+.kraj h3{
+    margin-bottom: 20px;
+}
+
+footer a{
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: gold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 7px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+}
+
+@media(max-width: 700px){
+    #container{
+        width: 95%;
+    }
+    
+    .slika{
+        height: 50vh;
+    }
+
+    .naslov{
+        padding: 50px;
+    }
+
+    .navigacija ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;       
+    }
+
+    .navigacija li{
+        padding: 5px;
+    }
+
+    #oprojektu{
+        flex-direction: column;
+    }
+
+    .projekt_text, .projekt_slika{
+        width: 100%;
+    }
+
+    .projekt_text{
+        margin-bottom: 20px;
+    }
+
+    #onama h1{
+        margin-bottom: 10px;
+    }
+
+    .pcelab{
+        display: inline;
+    }
+
+    .pcelab img{
+        width: 40%;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .pcelab p{
+        width: 100%;
+    }
+
+    .pcelam{
+        display: inline;
+    }
+
+    .pcelam p{
+        width: 70%;
+        margin: 20px 0;
+    }
+
+    .pcelam img{
+        width: 30%;
+        float: right;
+        margin: 20px 0 15px 15px;
+    }
+
+    /*#motivacija{
+        width: 100%;
+    }*/
+}
